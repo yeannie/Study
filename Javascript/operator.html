@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    
+
+    <script>
+        var radius = 10;
+        var pi = 3.14;
+        //alert(2* pi * radius); 
+            // alert 함수는 알림창과 같은것을 띄워준다
+        window.onload = function(){
+            var list =  "" ; //문자열 타입
+            var num = 10; // Number타입
+            var mum = 10; 
+            //복합대입연산자를 통하여 list 변수에 문자열 누적
+            list += "<ul>";
+            list += "<li>Hi </li>";
+            list += "<li> 복합대입연산자 </li>";
+            list += "<li> += 문자열누적</li>";
+            list += "</ul>";
+            //문서에 출력하라
+            //document.body.innerHTML = list; //20-24라인의 html을 문서에 출력
+            /*
+            innerHTML 과  innerTEXT의 차이
+                다루는 값이 text element 인지 html element인지에 따라 차이가 남
+                element.innerText;   element안의 text값들만 가져옴
+                element.innerHTML;   element안의 HTML 이나 XML을 가져옴
+
+            */
+           //정수형도 아래와 같이 복합 대입연산을 통해서 값을 누적 시킬수 있다.
+            num += 10;  num += 10; 
+            num +=10;
+            //document.write(num);  //40
+                //선언을 해놓고 대입을 해야 나옵니다....;
+            mum *=10 ;  mum *=10;
+            // document.write(mum); //1000
+        }
+        var Number = 10;
+        alert(Number++);//후위 증가연산자 : ; 이 끝난 후 증가가 됨 10출력 Number = 11
+        alert(++Number);//전위 증가연산자 : ;이 끝나기 전에 이미 증가가 됨 12출력 Number=12 
+        alert(Number++);//12출력  ;이 끝난 후 증가가 됨 Number=13
+        document.write(Number); //13출력 
+        
+    </script>
+</body>
+</html>
