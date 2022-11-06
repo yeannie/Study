@@ -1,1 +1,3 @@
-# Study-Js
+# Study
+Js
+Vue.js
