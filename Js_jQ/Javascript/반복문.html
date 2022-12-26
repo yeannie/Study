@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <script>
+        /*
+        var data = prompt ("어디까지 숫자를 출력할까요? ","숫자입력");
+        //string => number
+        data = parseInt(data);
+        //싱글루프
+        for(var i =1; i<=data; i++){
+            document.write(I+"<br>");
+        }
+        */
+        /*
+        //싱글루프
+        초기회(단 한번)->비교(조건식)->실행문->증감식
+        var dan = prompt("몇 단을 출력할까요? ");
+        for(var i =1; i<=9; i++){
+            document.write(dan+ "*"+ i +"="+(dan*i)+"<br>");
+        }
+        */
+       //string 배열을 선언과 동시에 초기화
+        var data = ["가","나","다","라","마","바"];
+        //배열은 인덱스로 관리를 해서 값을 수정할 때도 인덱스를 사용해야 한다.
+        document.write(data[0]);
+        /*
+        for(var i=0; i<7 ; i++){
+            document.write(data[i]+"<br>");
+        }
+        */
+       document.write("data배열의 길이 : "+data.length+"<br>")
+        for(var i=0; i<data.length ; i++){
+            document.write(data[i]+"<br>");
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> if 4 </title>
+</head>
+<body>
+
+    <script>
+        /*
+        //사용자로부터 입력받는 부분
+        var userID = window.prompt("아이디를 입력하세요.");
+        var userPW = window.prompt("패스워드를 입력하세요.");
+        //값 비교   
+        //cpu의 참조를 가장 적게 받으려고 한다면, 
+        //if-else 구문을 사용하는것이 좋다.
+        if(userID == "star" && userPW == "1111" ){
+            //alert(message?: any): void
+            alert(userID + "님이 로그인 하셨습니다.");
+        }
+        else if(userID == "star"){
+            alert("패스워드가 잘못 입력되었습니다.");
+        }
+        else{
+            alert("아이디가 잘못 입력되었습니다.");
+        }
+        */
+        /*
+        var value = window.prompt("행운의 번호를 고르세요.");
+
+        if(value == "1"){
+            document.write("당첨! OLED TV 190인치");
+        }
+        else if(value == "2"){
+            document.write("당첨!!! 무풍에어콘");
+        } 
+        else if(value == "3"){
+            document.write("당첨!! 사과PC ");
+        }
+        else{ 
+            document.write("꽝입니다");
+        }
+        */
+       var score = window.prompt("점수를 입력하세요.");
+        //문자를 숫자로 강제 전환
+        score = parseInt(score);
+        //값 비교
+       if(score >= 90 && score<=100){
+           document.write(score + "점은 A학점입니다.");
+       }
+       else if(score >= 80 && score <= 89){
+           document.write(score + "점은 B학점입니다.");
+       }
+       if(score >= 69 && score <= 79){
+           document.write(score + "점은 C학점입니다.");
+       }
+       if(score < 68){
+           document.write(score + "점은 D학점입니다.");
+       }
+       
+    </script>
+</body>
+</html>

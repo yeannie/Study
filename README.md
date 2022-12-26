@@ -1,3 +1,5 @@
 # Study
-Js
+JavaScript
+jQuery
 Vue.js
+Python
